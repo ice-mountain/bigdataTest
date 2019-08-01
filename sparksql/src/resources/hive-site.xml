@@ -1,0 +1,38 @@
+<configuration>
+   <property>
+        <name>javax.jdo.option.ConnectionUserName</name>用户名（这4是新添加的，记住删除配置文件原有的哦！）
+        <value>root</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>密码
+        <value>123456</value>
+    </property>
+   <property>
+        <name>javax.jdo.option.ConnectionURL</name>mysql
+        <value>jdbc:mysql://hadoop:3306/myhive?createDatabaseIfNotExist=true</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>mysql驱动程序
+        <value>com.mysql.jdbc.Driver</value>
+    </property>
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/myhive/bigdata</value>
+        <description>配置自定义目录hive上的表的在hdfs的存储路径</description>
+     </property>
+    <property>
+    <!-- hiveserver2用户名 -->
+   	 <name>beeline.hs2.connection.user</name>
+    	<value>root</value>
+   </property>
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://hadoop:9083</value>
+    </property>
+     <property>
+    	<!-- hiveserver2密码 -->
+    	<name>beeline.hs2.connection.password</name>
+    	<value>123456</value>
+     </property>
+
+</configuration>
