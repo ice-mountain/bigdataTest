@@ -12,7 +12,7 @@
         <scala.version>2.11.8</scala.version>
         <spark.version>2.4.3</spark.version>
         <hadoop.version>2.7.6</hadoop.version>
-        <jackson.version>2.10.0.pr1</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
         <encoding>UTF-8</encoding>
     </properties>
     <dependencies>
